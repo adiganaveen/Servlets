@@ -1,0 +1,8 @@
+package com.bridgelabz.servlets;
+
+public class UserDetails {
+public static void main(String[] args) {
+	LoginServlet loginServlet=new LoginServlet();
+	loginServlet.display();
+}
+}

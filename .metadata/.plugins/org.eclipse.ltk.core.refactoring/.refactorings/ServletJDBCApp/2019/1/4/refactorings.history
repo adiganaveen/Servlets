@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ServletJDBCApp/src/com/bridgelabz/util&apos; to &apos;dbutil&apos;" description="Rename resource &apos;util&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/bridgelabz/util" name="dbutil" stamp="1548214771133" updateReferences="true"/>
+</session>

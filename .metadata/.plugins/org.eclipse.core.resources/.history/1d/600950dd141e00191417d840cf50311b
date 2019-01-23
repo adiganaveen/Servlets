@@ -1,0 +1,7 @@
+package com.bridgelabz.servlets;
+
+public class UserDetails {
+public static void main(String[] args) {
+	
+}
+}
