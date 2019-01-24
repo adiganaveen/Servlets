@@ -35,16 +35,17 @@ public class UserDatabase {
 	
 	public static void registration(User user) throws ClassNotFoundException, SQLException
 	{
-		String query="insert into User values(?,?,?,?,?)";
-		 Connection conn=getMySQLConnection();
-         PreparedStatement preparedStmt = conn.prepareStatement(query);
-         preparedStmt.setInt(1, 0);
-         preparedStmt.setString (2, user.getName());
-         preparedStmt.setString (3, user.getEmail());
-         preparedStmt.setString(4, user.getPassword());
-         preparedStmt.setString(5, user.getMobileNumber());
-         preparedStmt.execute();
-         conn.close();
+		String query = "insert into User values(?,?,?,?,?)";
+		Connection conn = getMySQLConnection();
+		PreparedStatement preparedStmt = conn.prepareStatement(query);
+		preparedStmt.setInt(1, 0);
+		preparedStmt.setString(2, user.getName());
+		preparedStmt.setString(3, user.getEmail());
+		preparedStmt.setString(4, user.getPassword());
+		preparedStmt.setString(5, user.getMobileNumber());
+		int i=preparedStmt.executeUpdate();
+		System.out.println(i+" rows affected");
+		conn.close();
 	}
 	public static User login(LoginUser loginUser) throws ClassNotFoundException, SQLException
 	{
