@@ -58,9 +58,10 @@ public class UserDatabase {
 	        User user = null;
 	        while (rs.next()) { 
 	        	user= new User();
-//	        	user.setName(rs.getString(2));
-//	        	user.setEmail(rs.getString(3));
-//	        	user.setMobileNumber(rs.getString(5));
+	        	String name=rs.getString(2);
+	        	user.setName(name);
+	        	user.setEmail(rs.getString(3));
+	        	user.setMobileNumber(rs.getString(5));
 	        }
 	        rs.close();
 	        stmt.close(); 
