@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=US-ASCII"
 	pageEncoding="US-ASCII"%>
+<%@page import="com.bridgelabz.model.User"%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,11 +28,13 @@
 	%>
 	<h3>
 		Hi
-		<%=userName%>, Login successful. Your Session ID=<%=sessionID%>
-	</h3>
+		<%=userName%>, Login successful.
+	</h3><br>
+	Your Session ID=<%=sessionID%>
+	<br><br><br>
 	<br> User=<%=userName%>
 	<br>
-	<a href="<%=response.encodeURL("CheckoutPage.jsp") %>">Checkout Page</a>
+	<a href="<%=response.encodeURL("CheckoutPage.jsp") %>">User Details</a>
 	<form action="<%=response.encodeURL("LogoutServlet") %>" method="post">
 		<input type="submit" value="Logout">
 	</form>

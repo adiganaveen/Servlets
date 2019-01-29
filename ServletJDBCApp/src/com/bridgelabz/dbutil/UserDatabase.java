@@ -58,14 +58,27 @@ public class UserDatabase {
 	        User user = null;
 	        while (rs.next()) { 
 	        	user= new User();
-	        	String name=rs.getString(2);
-	        	user.setName(name);
+	        	user.setName(rs.getString(2));
 	        	user.setEmail(rs.getString(3));
+	        	user.setPassword(rs.getString(4));
 	        	user.setMobileNumber(rs.getString(5));
 	        }
 	        rs.close();
 	        stmt.close(); 
 	        conn.close(); 
 	        return user;      
+	}
+	public static void edit(User user) throws ClassNotFoundException, SQLException
+	{
+		String query = "UPDATE User " +
+                "SET name = ? ,password=? ,mobile_number=? WHERE email = ?";
+		Connection conn=getMySQLConnection();
+		 PreparedStatement stmt = conn.prepareStatement(query);
+		 stmt.setString(4, user.getEmail());
+		 stmt.setString(2, user.getPassword());
+		 stmt.setString(1, user.getName());
+		 stmt.setString(3, user.getMobileNumber());
+		 int i=stmt.executeUpdate();
+		 System.out.println(i);
 	}
 }

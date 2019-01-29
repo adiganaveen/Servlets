@@ -35,13 +35,13 @@ public class LoginServlet extends HttpServlet {
 			try {
 				User user = UserDatabase.login(loginUser);
 				if (user != null) {
-					HttpSession session = req.getSession();
-					session.setAttribute("uname", user.getName());
-					// setting session to expiry in 30 mins
-					session.setMaxInactiveInterval(5);
-
+					HttpSession session = req.getSession(true);
+					session.setAttribute("User", user);
+					
+					session.setMaxInactiveInterval(5*60);
+					
 					Cookie cookie = new Cookie("uname", user.getName());
-					cookie.setMaxAge(5);
+					cookie.setMaxAge(30 * 60);
 					resp.addCookie(cookie);
 					String encodedURL = resp.encodeRedirectURL("welcome.jsp");
 					resp.sendRedirect(encodedURL);
