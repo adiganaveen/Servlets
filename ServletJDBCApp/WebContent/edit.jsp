@@ -5,6 +5,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: black;
+	color: #fff;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	right: 450px;
+	margin: 20px;
+	max-width: 300px;
+	padding: 16px;
+	background-color: black;
+}
+/* Set a style for all buttons */
+button {
+	background-color: #4CAF58;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+</style>
 <title>Insert title here</title>
 </head>
 <body>
@@ -25,31 +68,37 @@
 			}
 		}
 	%>
+	<div class="container">
 	<form action="edit" method="post">
 		<h2>
 			<center>Editing</center>
 		</h2>
 		<div align="center">
 			<div>
-				<label>Full Name</label> <input type="text" name="name"
+				<label>Full Name :</label> <input type="text" name="name"
 					placeholder="<%=user.getName()%>">
 			</div>
 			<div>
-				<label>E-mail</label>  :<%=user.getEmail()%>
-			</div>
-			<div>
-				<label>Password </label> <input type="password" name="password"
+				<label>Password :</label> <input type="password" name="password"
 					placeholder="<%=user.getPassword()%>">
 			</div>
 			<div>
-				<label>Mobile number</label> <input type="text" name="number"
+				<label>Mobile number :</label> <input type="text" name="number"
 					placeholder="<%=user.getMobileNumber()%>">
 			</div>
-			<a href="<%=response.encodeURL("CheckoutPage.jsp") %>">Go Back</a>
-			<div>
-				<input type="submit" value="save">
+		
+
+			<div align="center">
+				<button type="submit" value="submit">Save</button>
 			</div>
 		</div>
 	</form>
+	<div align="center">
+		<form action="<%=response.encodeURL("CheckoutPage.jsp")%>"
+			method="post">
+			<button type="submit" value="submit">Back</button>
+		</form>
+	</div>
+		</div>
 </body>
 </html>

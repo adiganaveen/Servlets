@@ -1619,3 +1619,6 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.jface.text 2 0 2019-01-29 09:12:58.567
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-01-29 15:42:24.084
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

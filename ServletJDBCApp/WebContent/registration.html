@@ -4,7 +4,16 @@
 <meta charset="UTF-8">
 <style>
 body {
+	width: 100%;
+	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+	/* The image used */
+	background-image:
+		url("https://i.ytimg.com/vi/TbRM6f7atFU/maxresdefault.jpg");
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-size: cover;
 }
 
 /* Full-width input fields */
@@ -15,6 +24,15 @@ input[type=text], input[type=password] {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	right: 450px;
+	margin: 20px;
+	max-width: 300px;
+	padding: 16px;
+	background-color: white;
 }
 
 /* Set a style for all buttons */
@@ -32,76 +50,16 @@ button:hover {
 	opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-}
-
-.container {
-	padding: 16px;
-}
-
-span.psw {
-	float: right;
-	padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-	padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-	background-color: #fefefe;
-	margin: 5% auto 15% auto;
-	/* 5% from the top, 15% from the bottom and centered */
-	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #000;
-	font-size: 35px;
-	font-weight: bold;
-}
-
-@media screen and (max-width: 300px) {
-	span.psw {
-		display: block;
-		float: none;
-	}
-	.cancelbtn {
-		width: 100%;
-	}
-}
-*
-/
 </style>
 <title>Registration</title>
 </head>
 <body>
-	<div align="center">
-		<b>Registration Page</b>
-	</div>
-	<form class="modal-content animate" action="registration" method="post">
+
+	<form action="registration" method="post">
 		<div class="container">
+			<div align="center">
+				<b>Registration Page</b>
+			</div>
 			<label for="uname"><b>Full Name</b></label> <input type="text"
 				placeholder="Enter Username" name="name"> <label for="uname"><b>Email</b></label>
 			<input type="text" placeholder="Enter email" name="email"> <label
@@ -110,10 +68,11 @@ span.psw {
 				for="uname"><b>Mobile Number</b></label> <input type="text"
 				placeholder="Enter mobile number" name="number">
 			<button type="submit" value="submit">Register</button>
+			<div>
+				<span class="psw">Go Back <a href="login.html">Sign In?</a></span>
+			</div>
 		</div>
-		<div>
-			<span class="psw">Go Back <a href="login.html">Sign In?</a></span>
-		</div>
+
 	</form>
 </body>
 </body>
