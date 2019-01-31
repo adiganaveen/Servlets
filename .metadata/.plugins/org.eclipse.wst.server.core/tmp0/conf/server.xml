@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/home/admin1/Documents/adiga_docs/ServletPrograms/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/admin1/Documents/adiga_docs/ServletPrograms/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ServletJDBCApp" path="/ServletJDBCApp" reloadable="true" source="org.eclipse.jst.jee.server:ServletJDBCApp"/></Host>
+      <Context docBase="/home/admin1/Documents/adiga_docs/ServletPrograms/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/admin1/Documents/adiga_docs/ServletPrograms/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SpringRestHibernate" path="/SpringRestHibernate" reloadable="true" source="org.eclipse.jst.jee.server:SpringRestHibernate"/><Context docBase="/home/admin1/Documents/adiga_docs/ServletPrograms/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ServletJDBCApp" path="/ServletJDBCApp" reloadable="true" source="org.eclipse.jst.jee.server:ServletJDBCApp"/></Host>
     </Engine>
   </Service>
 </Server>

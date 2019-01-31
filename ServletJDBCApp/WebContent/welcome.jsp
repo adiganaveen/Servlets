@@ -11,6 +11,11 @@ body {
 	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 	background: black;
+	background-image:url("https://i.ytimg.com/vi/TbRM6f7atFU/maxresdefault.jpg");
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-size: cover;
 	color: #fff;
 }
 

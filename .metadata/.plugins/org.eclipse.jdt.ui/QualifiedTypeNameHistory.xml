@@ -16,10 +16,16 @@
 <fullyQualifiedTypeName name="com.bridgelabz.dbutil.UserDatabase"/>
 <fullyQualifiedTypeName name="com.bridgelabz.model.LoginUser"/>
 <fullyQualifiedTypeName name="com.bridgelabz.model.User"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="javax.servlet.Filter"/>
 <fullyQualifiedTypeName name="javax.servlet.FilterConfig"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.GenericGenerator"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestHeader"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.spring.rest.component.Country"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 </qualifiedTypeNameHistroy>

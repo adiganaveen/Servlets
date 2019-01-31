@@ -12,6 +12,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/admin1/Documents/adiga_docs/ServletPrograms/sample"/>
+			<item value="/home/admin1/Documents/adiga_docs/ServletPrograms/springhibernate"/>
 			<item value="/home/admin1/Documents/adiga_docs/ServletPrograms/LoginRegisterApp"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
